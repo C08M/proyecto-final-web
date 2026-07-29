@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>G3A</title>
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Juegos</a>
+            <a href="registro.html">Registrarse</a>
+        </nav>
+
+        <button type="button" id="btnCarrito" onclick="abrirCarrito()">
+            Carrito (<span id="contadorCarrito">0</span>)
+        </button>
+    </header>
+
+
+    <section class="titulo" id="inicio">
+        <p class="subtitulo">Tu tienda de videojuegos digitales</p>
+        <h1>G3A</h1>
+        <p class="descripcion">Compra tus juegos favoritos y descargalos al instante</p>
+    </section>
+
+
+    <main>
+
+        <section id="productos">
+            <h2>Nuestros Juegos</h2>
+
+
+            <div class="buscador-contenedor">
+                <input type="text" id="buscador" placeholder="Buscar productos aqui..." onkeyup="filtrarProductos()">
+            </div>
+
+
+            <div class="categoria-contenedor">
+                <select id="categoria" onchange="filtrarProductos()">
+                    <option value="todas">Todas las categorías</option>
+                    <option value="accion">Acción</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="deportes">Deportes</option>
+                </select>
+            </div>
+
+            <div class="grid-productos">
+
+                <article class="producto" data-categoria="accion">
+                    <img src="./img/The Master Chief Collection.JPG" alt="Halo: The Master Chief Collection">
+                    <h3>Halo: The Master Chief Collection</h3>
+                    <p class="precio">$35.99</p>
+                    <button type="button" onclick="agregarCarrito('Halo: The Master Chief Collection', 35.99)">Agregar al carrito</button>
+                </article>
+
+
+                <article class="producto" data-categoria="accion">
+                    <img src="./img/DOOM.JPG" alt="DOOM">
+                    <h3>DOOM</h3>
+                    <p class="precio">$12.00</p>
+                    <button type="button" onclick="agregarCarrito('DOOM', 12.00)">Agregar al carrito</button>
+                </article>
+
+
+                <article class="producto" data-categoria="aventura">
+                    <img src="./img/Red Dead Redemption 2.JPG" alt="Red Dead Redemption 2">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p class="precio">$59.99</p>
+                    <button type="button" onclick="agregarCarrito('Red Dead Redemption 2', 59.99)">Agregar al carrito</button>
+                </article>
+
+                <article class="producto" data-categoria="aventura">
+                    <img src="./img/God of War.JPG" alt="God of War">
+                    <h3>God of War</h3>
+                    <p class="precio">$49.99</p>
+                    <button type="button" onclick="agregarCarrito('God of War', 49.99)">Agregar al carrito</button>
+                </article>
+
+
+                <article class="producto" data-categoria="deportes">
+                    <img src="./img/NBA 2K26.JPG" alt="NBA 2K26">
+                    <h3>NBA 2K26</h3>
+                    <p class="precio">$79.99</p>
+                    <button type="button" onclick="agregarCarrito('NBA 2K26', 79.99)">Agregar al carrito</button>
+                </article>
+
+
+                <article class="producto" data-categoria="deportes">
+                    <img src="./img/EA SPORTS FC™ 25.JPG" alt="EA SPORTS FC™ 25">
+                    <h3>EA SPORTS FC™ 25</h3>
+                    <p class="precio">$50.00</p>
+                    <button type="button" onclick="agregarCarrito('EA SPORTS FC™ 25', 50.00)">Agregar al carrito</button>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 G3A. Todos los derechos reservados.</p>
+        <nav>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </nav>
+    </footer>
+
+    <script src="./filtrar.js"></script>
+</body>
+</html>
