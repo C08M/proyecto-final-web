@@ -196,4 +196,103 @@ footer nav a {
 
 footer nav a:hover {
     color: #22d3ee;
+} 
+
+/* registro.html */ 
+
+.formulario-contenedor {
+    background-color: #1a1330;
+    border: 2px solid #8b5cf6;
+    border-radius: 10px;
+    max-width: 450px;
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contenedor label {
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.formulario-contenedor input {
+    padding: 10px;
+    border: 1px solid #3a3355;
+    border-radius: 6px;
+    background-color: #0d0b1a;
+    color: whitesmoke;
+    font-family: inherit;
+}
+
+.formulario-contenedor button {
+    align-self: center;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    background-color: #8b5cf6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-contenedor button:hover {
+    background-color: #7c3aed;
+} 
+
+/* Carrito */
+
+.carrito-contenedor {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.item-carrito {
+    background-color: #1a1330;
+    border: 1px solid #3a3355;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-carrito button {
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    background-color: #ef4444;
+    color: white;
+    cursor: pointer;
+}
+
+.item-carrito button:hover {
+    background-color: #dc2626;
+}
+
+#totalCarrito {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #22d3ee;
+    text-align: center;
+    margin: 25px 0;
+}
+
+#btnComprar {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    background-color: #8b5cf6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnComprar:hover {
+    background-color: #7c3aed;
 }
