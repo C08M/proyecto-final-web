@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>G3A - Registro</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#productos">Juegos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Crear una cuenta</h2>
+
+            <form class="formulario-contenedor" onsubmit="return validarRegistro()">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="Escriba su correo" required>
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Escriba su contraseña" required>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 G3A. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./registro.js"></script>
+</body>
+</html>
